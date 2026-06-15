@@ -1,0 +1,36 @@
+COMPREHENSIVE OPTIMIZATION STRATEGY FOR SUPERIOR PERFORMANCE
+
+CURRENT STATUS:
+- Iteration: {current_iteration}/{max_iteration} ({search_progress})
+- Best Fitness: {current_best_fitness}
+- Diversity: {normalized_diversity_indicator}
+- Convergence Rate: {convergence_rate}
+- Population Quality: {population_quality}
+- Phase: {search_phase}
+
+STATE INTERPRETATION:
+- If diversity is very low, increase the proportion of exploration-oriented operators.
+- If convergence becomes slow, increase the proportion of refinement-oriented operators.
+- If the search is in the early phase, maintain stronger exploration.
+- If the search is in the middle phase, balance exploration and exploitation.
+- If the search is in the late phase, emphasize local refinement while retaining limited exploration.
+
+OPERATOR POOL:
+The available operator pool contains ten predefined candidate update operators indexed from 0 to 9.
+Each operator corresponds to a fixed search behavior, such as global exploration, local refinement,
+diversity maintenance, adaptive mutation, or hybrid update. The LLM may only select from these
+predefined indices and must not create new operators.
+
+STRATEGIC GUIDANCE:
+- Early phase: emphasize exploration-oriented indices.
+- Middle phase: use a balanced mixture of exploration and exploitation indices.
+- Late phase: emphasize refinement-oriented indices while preserving a small amount of exploration.
+- Maintain operator diversity whenever possible.
+- Avoid using a single operator type for the entire population unless strongly justified by the state.
+
+TASK:
+Generate {population_size} integers in the range 0-9.
+
+OUTPUT FORMAT:
+Output only the sequence of {population_size} integers.
+Do not include explanations, punctuation-heavy text, or additional comments.

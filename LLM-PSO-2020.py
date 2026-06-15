@@ -44,7 +44,7 @@ memory_pos = 0
 archive = []  # 外部存档SHADE策略参数
 
 tmpFitPop = deepcopy(FitPop)
-Trials = 3
+Trials = 30
 
 
 def unified_initialization(func):
